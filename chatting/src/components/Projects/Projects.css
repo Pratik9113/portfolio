@@ -1,0 +1,45 @@
+/* Projects.css */
+
+.project {
+    background-color:black; /* Light gray background color */
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px; /* Set your desired maximum width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  h2 {
+    color:#2bc179; /* Blue color for the heading */
+  }
+  
+  hr {
+    border-color:#2bc179; /* Blue color for the horizontal line */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .pb-3 {
+    padding-bottom: 1rem; /* Adjust as needed */
+  }
+
+  .project p{
+    color:white;
+  }
+
+  /* card  */
+#ads{
+    margin-top: 30px 0px;
+}
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%; /* Adjust for smaller screens */
+      padding: 0 20px; /* Add some padding on smaller screens */
+    }
+  }
+  

@@ -1,0 +1,57 @@
+/* Skill.css */
+
+  .skill {
+    background-color: black;
+    height: 300px;
+  }
+  
+  .text {
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    background-color: #ddd;
+    height: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+  }
+  
+  .see-more {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: none; /* Initially hide the See More option */
+  }
+  
+  /* Media query for screens 900px or less */
+  @media (max-width: 900px) {
+    .see-more {
+      display: block; /* Show the See More option for screens less than 900px */
+    }
+  
+    /* Additional skills section styling for smaller screens */
+    .additional-skills {
+      display: none;
+    }
+  }
+  
+  /* Media query for smaller screens (adjust as needed) */
+  @media (max-width: 768px) {
+    .col-xl-4 {
+      width: 100%; /* Make columns take full width on smaller screens */
+      margin-bottom: 10px;
+    }
+  
+    /* Display additional skills below existing skills on smaller screens */
+    .additional-skills {
+      display: block;
+    }
+  }
+  
