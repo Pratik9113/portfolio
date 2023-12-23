@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 const Home = () => {
   return (
     <>
-      <div className='container-fluid home-container'>
+      <div className='container-fluid home-container id = "Home"'>
         <div className=' home-content'>
         <h1 className='home-text'>Each project is crafted with unique technologies</h1>
             <h2>

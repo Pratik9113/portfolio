@@ -4,7 +4,7 @@ import './Projects.css';
 const Projects = () => {
   return (
     <>
-      <div className='project'>
+      <div className='project' id = "Project">
         <div className="container">
           <h1 className='col-12 mb-1 text-center'>Projects</h1>
           <hr />
@@ -23,7 +23,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="body col-lg-6">
+              <div className="body col-lg-7">
                    <div className='align'>
                     <h5 className="title">Card title</h5>
                     <p className="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -34,7 +34,7 @@ const Projects = () => {
             </div>
               <h6 className='project-h1-text'> ------------------x---------------- </h6>
             <div className='project-details'>
-                <div className="body col-lg-6">
+                <div className="body col-lg-7">
                    <div className='align'>
                     <h5 className="title">Card title</h5>
                     <p className="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -58,7 +58,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="body col-lg-6">
+              <div className="body col-lg-7">
                    <div className='align'>
                     <h5 className="title">Card title</h5>
                     <p className="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

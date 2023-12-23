@@ -11,7 +11,7 @@ const About = () => {
   },[]);
   return (
     <>
-        <div className='about'>
+        <div className='about' id = "About">
           <div class="container">
             <div class="row profile">
               <div class="col-sm-4">

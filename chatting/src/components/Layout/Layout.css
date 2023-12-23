@@ -17,6 +17,7 @@ header{
   justify-content: space-between;
   height: 60px;
   padding: 0 1.5rem;
+  
 }
 nav a {
   margin : 0 1.5rem;
@@ -38,7 +39,21 @@ header .nav-btn{
   opacity: 0;
   font-size: 1.8rem;
 }
+/* dark mode */
 
+.theme-btn{
+  align-items: center;
+  justify-content: center;
+  height : 35px;
+  width : 35px;
+  background-color: rgb(250, 247, 247);
+  text-align: center;
+  cursor: pointer;
+  right :0;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 10px;
+}
 @media only screen and (max-width :924px){
   header .nav-btn{
     visibility: visible;

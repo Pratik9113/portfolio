@@ -159,3 +159,12 @@
 
 
 }
+
+
+/**** dark mode */
+#dark .about,#dark .row .col-sm-4, #dark .row, #dark .about-section, #dark .about-section-main{
+    background-color: black;
+}
+#dark .about-section-main {
+    color: white;
+}
