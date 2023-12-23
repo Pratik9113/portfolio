@@ -2,7 +2,7 @@
 
 .home-container {
   height: 200px;
-  background-color: black;
+  background-color: rgb(235, 234, 234);
 }
 
 .home-content {
@@ -10,7 +10,7 @@
 }
 
 .home-content h3 {
-  color:white;
+  color:black;
   padding-top: 10px;
   margin-left: 10px;
 }
@@ -27,7 +27,7 @@
 }
 .home-button .btn-hire{
   background-color: rgb(11, 11, 237);
-  color:white;
+  color:black;
   width :150px;
 }
 .home-button .btn-hire:hover{
@@ -38,12 +38,12 @@
 }
 .home-button .btn-cv{
   background-color: rgb(237, 11, 11);
-  color:white;
+  color:black;
   margin-left:15px;
 }
 .home-button .btn-cv:hover{
   opacity: 80%;
-  background-color: white;
+  background-color: black;
   color:rgb(11, 11, 237);
   transition: 1s;
 }

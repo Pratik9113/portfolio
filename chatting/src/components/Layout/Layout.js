@@ -18,12 +18,12 @@ const Layout = () => {
   return (
     <>
       <header>
-        <h3>logo</h3>
+        <h3>Pratik Patil</h3>
         <nav ref={navRef}>
           <a href="/#"> Home </a>
           <a href="/#"> About </a>
-          <a href="/#"> Achievement</a>
           <a href="/#"> Projects </a>
+          <a href="/#"> Achievement</a>
           <a href="/#"> Tech stack</a>
           <a href="/#"> Contact</a>
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>

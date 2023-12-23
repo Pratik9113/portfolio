@@ -1,0 +1,49 @@
+.ach {
+    background-color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2bc179;
+}
+
+hr {
+    border-color: #2bc179;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pb-3 {
+    padding-bottom: 1rem;
+}
+
+.ach-name {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ach-box {
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.img-top {
+    height: 350px;
+    width: 350px;
+}
+
+@media (max-width: 768px) {
+    .ach-name {
+        flex: 0 0 calc(100% - 20px);
+        margin-bottom: 10px;
+    }
+}

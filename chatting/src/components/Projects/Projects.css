@@ -1,45 +1,83 @@
-/* Projects.css */
+
 
 .project {
-    background-color:black; /* Light gray background color */
-    padding: 20px;
-  }
-  
-  .container {
-    max-width: 800px; /* Set your desired maximum width */
-    margin: 0 auto; /* Center the container */
-  }
-  
-  h2 {
-    color:#2bc179; /* Blue color for the heading */
-  }
-  
-  hr {
-    border-color:#2bc179; /* Blue color for the horizontal line */
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .pb-3 {
-    padding-bottom: 1rem; /* Adjust as needed */
-  }
-
-  .project p{
-    color:white;
-  }
-
-  /* card  */
-#ads{
-    margin-top: 30px 0px;
+  background-color: black;
+  padding: 20px;
 }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .container {
-      max-width: 100%; /* Adjust for smaller screens */
-      padding: 0 20px; /* Add some padding on smaller screens */
-    }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #2bc179;
+}
+
+hr {
+  border-color: #2bc179;
+}
+
+.project-image {
+  height: 150px;
+  width: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pb-3 {
+  padding-bottom: 1rem;
+}
+/* project-card*/
+
+.project p {
+  color: white;
+}
+
+.project-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 75px 0;
+}
+
+.projects {
+  height:350px;
+  width:350px;
+  border-radius: 10px;
+  border: px solid rgb(38, 37, 37);
+}
+.projects:hover{
+  transform: scale(1.05); /* Increase the size on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+.project-outline-box {
+  height: 350px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgb(38, 37, 37);
+  overflow: hidden;
+}
+
+.img-top {
+  height: 200px;
+  width: 100%;
+}
+.title{
+  padding: 2px;
+  color: #2bc179;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .project-box {
+    margin: 0;
   }
-  
+
+  .projects {
+    flex: 0 0 calc(100% - 40px);
+    margin-bottom: 10px;
+  }
+}
