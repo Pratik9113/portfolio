@@ -18,7 +18,7 @@ const Layout = () => {
   return (
     <>
       <header>
-        <h3>Pratik Patil</h3>
+        <p className='header-text'>Pratik Patil</p>
         <nav ref={navRef}>
           <a href="/#"> Home </a>
           <a href="/#"> About </a>

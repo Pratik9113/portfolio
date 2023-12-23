@@ -1,15 +1,12 @@
 import React from 'react';
 import './Home.css';
 import Typewriter from 'typewriter-effect';
-import Resume from '../../docs/resume.txt';
 const Home = () => {
   return (
     <>
       <div className='container-fluid home-container'>
         <div className=' home-content'>
-            <h3>
-              Hii I am Pratik Patil...
-            </h3>
+        <h1 className='home-text'>Each project is crafted with unique technologies</h1>
             <h2>
             <Typewriter
                   options={{
@@ -19,12 +16,8 @@ const Home = () => {
                   }}
             />
             </h2>
-            <div className='home-button'>
-              <button className='btn btn-hire'>Hire Me</button>
-              <a className='btn btn-cv' href = {Resume} download="yourname.pdf">My Resume</a>
-            </div>
         </div>
-      </div>
+        </div>
     </>
   )
 }

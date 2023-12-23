@@ -1,8 +1,9 @@
 
 
 .project {
-  background-color: black;
+  background-color: white;
   padding: 20px;
+  height :max-content;
 }
 
 .container {
@@ -10,7 +11,7 @@
   margin: 0 auto;
 }
 
-h2 {
+h1 {
   color: #2bc179;
 }
 
@@ -33,16 +34,22 @@ hr {
 /* project-card*/
 
 .project p {
-  color: white;
+  color: black;
 }
 
 .project-box {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content:center;
   margin: 75px 0;
 }
-
+.project-details{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
 .projects {
   height:350px;
   width:350px;
@@ -57,21 +64,28 @@ hr {
   height: 350px;
   width: 100%;
   border-radius: 10px;
-  border: 2px solid rgb(38, 37, 37);
+  border: 2px solid rgb(228, 225, 225);
   overflow: hidden;
 }
-
+.align {
+  flex: 1; /* Allow the content to take the available space */
+  padding: 10px; /* Adjust padding as needed */
+}
 .img-top {
-  height: 200px;
+  height: 350px;
   width: 100%;
 }
 .title{
   padding: 2px;
   color: #2bc179;
 }
-
+.project-h1-text{
+  color:#2bc179;
+  text-align: center;
+  align-items: center;
+}
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   .project-box {
     margin: 0;
   }
@@ -79,5 +93,9 @@ hr {
   .projects {
     flex: 0 0 calc(100% - 40px);
     margin-bottom: 10px;
+  }
+
+  .body {
+    display: none;
   }
 }
