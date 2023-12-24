@@ -7,11 +7,14 @@ import Education from './components/Education/Education';
 import Contact from './components/contact/Contact';
 import ScrollToTop from "react-scroll-to-top";
 import { useTheme } from './context/ThemeContent';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   const [theme] = useTheme();
   return (
     <>
-    <div id  ={theme}>
+    {/* <div id  ={theme}>
+    <ToastContainer/> */}
     <Layout/>
     <Home/>
     <About/>
@@ -20,7 +23,7 @@ function App() {
     {/* <Achievement/> */}
     <Education/>
     <Contact/>
-    </div>
+    {/* </div> */}
     <ScrollToTop smooth
     color='#f29f67'
     style={{backgroungColor:'#1e1e2c', borderRadius:'80px'}} />

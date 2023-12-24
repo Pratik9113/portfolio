@@ -8,7 +8,7 @@
 .about {
     background-color: white;
    
-    height :600px;
+    height :500px;
     display: flex; /* Add flex container property */
     flex-direction: column; 
     justify-content: center;
@@ -151,7 +151,7 @@
     }
     .about{
         padding:7px;
-        height: 600px;
+        height: 500px;
     }
     .about-profile img {
         width: 100%; /* Make the image width 100% of its container for smaller screens */

@@ -26,3 +26,6 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT,()=>{
     console.log(`server Running on PORT ${PORT}`);
 })
+
+
+// http://localhost:8080/api/v1/portfolio/sendEmail/
