@@ -13,8 +13,8 @@ function App() {
   const [theme] = useTheme();
   return (
     <>
-    {/* <div id  ={theme}>
-    <ToastContainer/> */}
+    <div id  ={theme}>
+    <ToastContainer/>
     <Layout/>
     <Home/>
     <About/>
@@ -23,7 +23,7 @@ function App() {
     {/* <Achievement/> */}
     <Education/>
     <Contact/>
-    {/* </div> */}
+    </div>
     <ScrollToTop smooth
     color='#f29f67'
     style={{backgroungColor:'#1e1e2c', borderRadius:'80px'}} />
