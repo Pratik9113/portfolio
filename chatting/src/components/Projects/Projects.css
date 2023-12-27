@@ -75,6 +75,15 @@ hr {
   height: 350px;
   width: 100%;
 }
+.img-top-1 {
+  width: 100%; /* Set the width to 100% to make it responsive */
+  height: auto; /* Allow the height to adjust proportionally */
+  max-width: 350px; /* Set a maximum width to prevent stretching */
+  max-height: 350px; /* Set a maximum height to prevent stretching */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  border-radius: 10px; /* Apply border-radius as needed */
+}
+
 .title{
   padding: 2px;
   color: #2bc179;
@@ -89,44 +98,28 @@ hr {
   .project-box {
     margin: 0;
   }
-
+  projects .col-sm-6 {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
   .projects {
     flex: 0 0 calc(100% - 40px);
     margin-bottom: 10px;
   }
 
-  .body {
-    display: none;
-  }
-}
-/* 
-
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
+  .project-details{
+    display: block;
   }
 }
 
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+#dark .project{
+  background-color: black;
 }
 
-.project-details:nth-child(even) {
-  animation: slideInRight 0.8s ease-in-out;
+#dark .text-center{
+  color:aliceblue;
 }
-
-.project-details:nth-child(odd) {
-  animation: slideInLeft 0.8s ease-in-out;
-} */
+#dark .text{
+  color: aliceblue;
+}

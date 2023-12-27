@@ -91,3 +91,6 @@ button:focus{
     height: auto;
   }
 }
+#dark #Contact{
+  background-color: black;
+}

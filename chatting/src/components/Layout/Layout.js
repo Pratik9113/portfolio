@@ -31,22 +31,26 @@ const Layout = () => {
         <nav ref={navRef}>
           <a href="/#"> 
               <Link to = "Home" spy={true} smooth={true} offset={-100}  duration={100}>
-                   Home 
+                  Home 
               </Link>
           </a>
           <a href="/#"> 
                 <Link to = "About" spy={true} smooth={true} offset={-100}  duration={100}>
-                   About 
+                  About 
               </Link>
-           </a>
+          </a>
           <a href="/#"> 
                 <Link to = "Project" spy={true} smooth={true} offset={-100}  duration={100}>
-                   Project 
+                  Project 
               </Link>
-           </a>
-          <a href="/#"> Achievement</a>
+          </a>
+          <a href="/#">
+              <Link to = "Achievemnet" spy={true} smooth={true} offset={-100}  duration={100}>
+              Achievemnet
+              </Link>
+          </a>
           <a href="/#"> 
-               <Link to = "Education" spy={true} smooth={true} offset={-100}  duration={100}>
+              <Link to = "Education" spy={true} smooth={true} offset={-100}  duration={100}>
                   Education 
               </Link>
           </a>

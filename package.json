@@ -1,5 +1,6 @@
 {
   "name": "chattingapp",
+ 
   "version": "1.0.0",
   "description": "portfolio app",
   "main": "server.js",
@@ -9,6 +10,8 @@
   "author": "PratikPatil",
   "license": "ISC",
   "dependencies": {
+    "@formspree/react": "^2.5.1",
+    "axios": "^1.6.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",

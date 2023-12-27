@@ -1,10 +1,9 @@
 /* Home.css */
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;
 }
 
 .home-container {
@@ -12,7 +11,7 @@ font-family: 'Roboto', sans-serif;
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  height: 25vh; /* Full height of the viewport */
+  height: auto; /* Full height of the viewport */
   background-color: white;
 }
 
@@ -89,4 +88,10 @@ font-family: 'Roboto', sans-serif;
     margin-bottom: 10px; /* Add margin between buttons for smaller screens */
     display: block; /* Make buttons full-width on smaller screens */
   }
+}
+#dark .container-fluid{
+  background-color: black;
+}
+#dark h1{
+  color:aliceblue;
 }

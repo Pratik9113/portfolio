@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;
 }
 :root{
    color: azure;
@@ -58,6 +57,9 @@ header .nav-btn{
   header .nav-btn{
     visibility: visible;
     opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   header nav{
@@ -70,7 +72,7 @@ header .nav-btn{
     align-items: center;
     justify-content: center;
     gap:1rem;
-    background-color: azure;
+    background-color: white;
     transition: 1s;
     transform: translateY(-100vh);
     flex-direction: column;
@@ -81,10 +83,32 @@ header .nav-btn{
 
   nav .nav-close-btn{
     position:absolute;
-    top:1rem;
-    right:1rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
   }
   nav a {
     font-size : 1.5rem;
   }
+}
+
+
+#dark  a{
+  color:white;
+}
+
+#dark .nav-close-btn{
+  background-color:white;
+}
+
+#dark .nav-btn{
+  width: 30px;
+  height:30px;
+
+  background-color: aliceblue;
+}
+#dark nav{
+  background-color: black;
+  color:aliceblue;
 }

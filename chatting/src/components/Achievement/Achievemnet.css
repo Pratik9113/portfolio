@@ -1,5 +1,7 @@
 .ach {
-    background-color: black;
+    background-color: white;
+    height: auto;
+    padding:10px;
 }
 
 .container {
@@ -43,7 +45,14 @@ hr {
 
 @media (max-width: 768px) {
     .ach-name {
-        flex: 0 0 calc(100% - 20px);
-        margin-bottom: 10px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25px;
+       
     }
+    
+}
+#dark .ach{
+    background-color: black;
 }
