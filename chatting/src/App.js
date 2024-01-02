@@ -6,6 +6,7 @@ import Projects from './components/Projects/Projects';
 import Education from './components/Education/Education';
 import Contact from './components/contact/Contact';
 import ScrollToTop from "react-scroll-to-top";
+import Skill from "./components/Skill/Skill";
 import { useTheme } from './context/ThemeContent';
 import Achievement from './components/Achievement/Achievement';
 import { ToastContainer } from 'react-toastify';
@@ -19,11 +20,11 @@ function App() {
     <Layout/>
     <Home/>
     <About/>
-    {/* <Skill/> */}
+    <Skill/>
     <Projects/>
-    <Achievement/>
-    <Education/>
-    <Contact/>
+    {/* <Achievement/> */}
+    {/* <Education/> */}
+    {/* <Contact/> */}
     </div>
     <ScrollToTop smooth
     color='#f29f67'

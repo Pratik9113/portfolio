@@ -4,17 +4,20 @@
     padding:10px;
 }
 
-.container {
+.container1 {
     max-width: 800px;
     margin: 0 auto;
+    height: 90vh;
 }
 
 h2 {
     color: #2bc179;
 }
 
-hr {
-    border-color: #2bc179;
+.line{
+    width: 50%;
+    margin : 0 auto;
+    padding : 5px;
 }
 
 .text-center {
@@ -44,6 +47,9 @@ hr {
 }
 
 @media (max-width: 768px) {
+    .ach{
+        height: auto;
+    }
     .ach-name {
         display: block;
         justify-content: center;

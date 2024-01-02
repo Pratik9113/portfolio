@@ -2,14 +2,15 @@
 
   .skill {
     background-color: black;
-    height: 300px;
+    height: auto;
   }
   
-  .text {
+  .text-skill {
     margin-bottom: 10px;
+    font-size : 12px;
   }
   
-  .progress-bar {
+  .progress-bar{
     background-color: #ddd;
     height: 10px;
     margin-bottom: 10px;

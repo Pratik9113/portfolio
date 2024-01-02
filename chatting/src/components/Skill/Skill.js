@@ -6,9 +6,6 @@ import './Skill.css';
 const Skill = () => {
   const [showMore, setShowMore] = useState(false);
 
-  const toggleShowMore = () => {
-    setShowMore(!showMore);
-  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,7 +37,7 @@ const Skill = () => {
           <div className="row">
             {skills.slice(0).map((skill, index) => (
               <div key={index} className="col-xl-4">
-                <h2 className='text'>{skill.title}</h2>
+                <h2 className='text-skill'>{skill.title}</h2>
                 <div className="progress-bar">
                   <div className="progress" style={{ width: `${skill.progress}%` }}></div>
                 </div>
@@ -64,12 +61,7 @@ const Skill = () => {
           </div>
         )}*/}
 
-        {window.innerWidth <= 900 && (
-          <div className="see-more" onClick={toggleShowMore}>
-            {showMore ? 'See Less' : 'See More'}
-          </div>
-          
-        )}
+       
         
       </div>
     </>

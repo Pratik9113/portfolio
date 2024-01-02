@@ -9,7 +9,8 @@ const Education = () => {
     return (
       <>
         <div className="education" id="Education">
-          <h1 className="col-12 mt-3 mb-1 text-center">Education</h1>
+        <div className="spaces"></div>
+          <h1 className="mt-3 mb-1 text-center">Education</h1>
           <hr />
           <VerticalTimeline>
             <VerticalTimelineElement
