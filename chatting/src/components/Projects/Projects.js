@@ -9,7 +9,7 @@ const Projects = () => {
       <div className='project' id = "Project">
         <div className="container">
           <h1 className='col-12 mb-1 text-center'>Projects</h1>
-         
+          <hr/>
           <p className='pb-3 text-center'>
             Here is my project with live link and source code
           </p>
@@ -19,7 +19,7 @@ const Projects = () => {
 
           <div className='project-details'>
               <div className="projects-container col-sm-5">
-                <div className="project-outline-box">
+                <div className="project-outline-box col-sm-5">
                   <img className="img-top" src='https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg' alt='images' />
                 </div>
               </div>
@@ -37,7 +37,7 @@ const Projects = () => {
             <div className='project-details'>
 
               <div className="projects-container col-sm-5">
-                <div className="project-outline-box">
+                <div className="project-outline-box col-sm-5">
                   <img className="img-top" src={notifyu} alt='images' />
                 </div>
               </div>
@@ -55,7 +55,7 @@ const Projects = () => {
 
             <div className='project-details'>
               <div className="projects-container col-sm-5">
-                <div className="project-outline-box">
+                <div className="project-outline-box col-sm-5">
                   <img className="img-top" src={amazon} alt='images' />
                 </div>
               </div>

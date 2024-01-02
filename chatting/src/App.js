@@ -22,9 +22,9 @@ function App() {
     <About/>
     <Skill/>
     <Projects/>
-    {/* <Achievement/> */}
-    {/* <Education/> */}
-    {/* <Contact/> */}
+    <Achievement/>
+    <Education/>
+    <Contact/>
     </div>
     <ScrollToTop smooth
     color='#f29f67'

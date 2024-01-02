@@ -51,20 +51,19 @@
         
     }
     .projects-container {
-        height:350px;
+        height:auto;
         width:350px;
         border-radius: 10px;
-        border: px solid rgb(38, 37, 37);
+        
     }
     .projects:hover{
         transform: scale(1.05); /* Increase the size on hover */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
     }
     .project-outline-box {
-        height: 300px;
+        height: auto;
         width: 100%;
         border-radius: 10px;
-        border: 2px solid rgb(228, 225, 225);
         overflow: hidden;
     }
     .align {
@@ -75,14 +74,7 @@
         height: 350px;
         width: 100%;
     }
-    .img-top-1 {
-        width: 100%; /* Set the width to 100% to make it responsive */
-        height: auto; /* Allow the height to adjust proportionally */
-        max-width: 350px; /* Set a maximum width to prevent stretching */
-        max-height: 350px; /* Set a maximum height to prevent stretching */
-        object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-        border-radius: 10px; /* Apply border-radius as needed */
-    }
+    
     
     .title{
         padding: 2px;
@@ -94,7 +86,7 @@
         align-items: center;
     }
     /* Responsive Styles */
-    @media (max-width: 830px) {
+    @media (max-width: 800px) {
         .project-box {
         margin: 0;
         }

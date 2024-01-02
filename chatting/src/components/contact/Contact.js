@@ -34,7 +34,7 @@ const Contact = () => {
     // }
     return (
         <>
-        <div className="both-conatct">
+        <div className="both-contact">
             <div className="contact" id="Contact">
             <div className="spaces"></div>
             <div className='ach'>
@@ -61,7 +61,7 @@ const Contact = () => {
                     <div className="col">
                         <div className="row border-line">
                             <h2>Email</h2>
-                            <p>pratik.patil9113@gmail.com</p>
+                            <p className='contact-p'>pratik.patil9113@gmail.com</p>
                         </div>
                     </div>
                     <div className="col">
@@ -81,8 +81,7 @@ const Contact = () => {
                             </div>
                             </div>
                         </div>
-                        
-                    </div>
+                </div>
                 </div>
             </div>
         <div className="container input-contact" id ="Contact">

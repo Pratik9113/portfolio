@@ -1,7 +1,9 @@
-.ach {
+
+.spaces1 {
     background-color: white;
-    height: auto;
-    padding:10px;
+     height :max-content;
+    padding:0;
+    margin:0;
 }
 
 .container1 {
@@ -35,30 +37,47 @@ h2 {
 }
 
 .ach-box {
-    height: 350px;
-    width: 350px;
+    height: 18.2rem;
+    width: 18.2rem;
     border-radius: 10px;
     border: 2px solid white;
 }
 
-.img-top {
-    height: 350px;
-    width: 350px;
+.img-achieve-top {
+    height: 18rem;
+    width: 18rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .ach{
         height: auto;
     }
+    .ach-box {
+        width: 100%;
+        margin : 0 auto;
+    }
     .ach-name {
-        display: block;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .ach1{
+        width:100%;
+        margin: 0 auto;
+    }
+    .body-ach{
+        display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 25px;
-       
     }
-    
+    .img-achieve-top{
+        width: 18.2rem; 
+        min-height: 18.2rem;/* Make the image fill its container */
+        height: auto; /* Maintain the aspect ratio */
+        display: block;
+        max-width: 100%;
+    }
 }
-#dark .ach{
+#dark .spaces1{
     background-color: black;
 }

@@ -8,10 +8,11 @@
   height:30px;
 }
 .both-contact{
-  height: 100vh;
+  height: max-content;
+  background-color: white;
 }
 .input-contact{
-  height:0vmax;
+  height:max-content;
 }
 .container{
   height: auto;
@@ -26,7 +27,9 @@
   flex: 1;
   margin: 10px;
 }
-
+.contact-p {
+  font-size: 80%
+}
 .row1 .border-line {
   height: 150px;
   background-color: aliceblue;
@@ -42,7 +45,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow on hover */
   background-color: rgb(187, 203, 209); /* Color change on hover */
 }
-
+.contact-input{
+  height : auto;
+}
 /* Add additional styles for contact-input if needed */
 
 .contact-text-field{
@@ -113,7 +118,10 @@ button:focus{
 #dark .contact-class{
   height : auto;
 }
-
+#dark .both-contact{
+  height: max-content;
+  background-color: black;
+}
 #dark .row1 .border-line {
   height: 150px;
   background-color: rgb(37, 38, 39);
