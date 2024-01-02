@@ -12,6 +12,9 @@
     font-weight: bold;
     color:#4caf50;
 }
+.content-space{
+  height: 100px;
+}
 
 #dark .education{
     background-color:black;

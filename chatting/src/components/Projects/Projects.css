@@ -56,6 +56,9 @@
         border-radius: 10px;
         
     }
+    .content-space{
+        height: 100px;
+      }
     .projects:hover{
         transform: scale(1.05); /* Increase the size on hover */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
@@ -94,6 +97,9 @@
         justify-content: center;
         width: 100%;
         flex-direction: column;
+        }
+        .content-space{
+            height: 40px;
         }
         .projects-container {
             width: 100%; /* Adjust the width of the container */

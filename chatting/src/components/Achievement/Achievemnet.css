@@ -1,7 +1,7 @@
 
 .spaces1 {
     background-color: white;
-     height :max-content;
+    height :max-content;
     padding:0;
     margin:0;
 }
@@ -11,6 +11,9 @@
     margin: 0 auto;
     height: 90vh;
 }
+.content-space{
+    height: 100px;
+  }
 
 h2 {
     color: #2bc179;
@@ -56,6 +59,9 @@ h2 {
         width: 100%;
         margin : 0 auto;
     }
+    .content-space{
+        height: 40px;
+      }
     .ach-name {
         justify-content: center;
         width: 100%;

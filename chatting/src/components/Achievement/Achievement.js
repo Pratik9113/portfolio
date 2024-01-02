@@ -32,6 +32,7 @@ const Achievement = () => {
         </div>
       </div>
       </div>
+      <div className='content-space'></div>
     </>
   );
 }

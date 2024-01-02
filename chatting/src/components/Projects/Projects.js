@@ -73,6 +73,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <div className='content-space'></div>
     </>
   );
 }

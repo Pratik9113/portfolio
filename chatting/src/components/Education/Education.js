@@ -37,6 +37,7 @@ As a PCM student, I achieved a percentage of 89.4 in Class 12. I successfully cr
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
+        <div className='content-space'></div>
       </>
     );
   };
