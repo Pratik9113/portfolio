@@ -28,7 +28,7 @@ const Projects = () => {
                     <div className='align'>
                     <h5 className="title text">Portfolio-MERN</h5>
                     <p className="text"> a dark mode-enabled portfolio using the MERN (MongoDB, Express.js, React, Node.js) stack and have included features like email facilities, a responsive navbar, and sections about education and projects.</p>
-                    <a href="/#" className="btn btn-primary mx-1">GoLive</a>
+                    <a href="https://portfolio-4qlk.onrender.com" className="btn btn-primary mx-1">GoLive</a>
                     <a href="https://github.com/Pratik9113/portfolio-mern-project.git" className="btn btn-primary mx-3">Github</a>
                     </div>
               </div>
