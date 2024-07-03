@@ -1,80 +1,57 @@
 import React from 'react';
 import './Projects.css';
-import amazon from '../../amazon.png';
-import notifyu from '../../notifyu.png';
+import speechify from "../../assets/speechify.png";
+import taskManagement from "../../assets/taskManagement.png"
+import faceRecognition from "../../assets/faceRecognition.png"
+import portfolio from "../../assets/Portfolio.png"
 const Projects = () => {
+  const projectList = [
+    {
+      title: 'Speechify',
+      description: 'Implemented high-accuracy speech-to-text, multi-language text translation, audio-to-text, and text-to-speech capabilities',
+      image: speechify,
+      videoLink: "",
+      liveLink: ""
+    },
+    {
+      title: 'Task Management',
+      description: 'task management system with comprehensive CRUD features, empowering users to streamline worklow processes with email facilities',
+      image: taskManagement,
+      videoLink: "",
+      liveLink: ""
+    },
+    {
+      title: 'Face recognition',
+      description: 'automatic attendance tracking through facial recognition, ensuring face detection accuracy achieving an impressive accuracy range of 89% to 95%.',
+      image: faceRecognition,
+      videoLink: "",
+      liveLink: ""
+    },
+    {
+      title: 'PortFolio',
+      description: 'Implemented an intuitive and visually appealing user interface to enhance user experience and engagement',
+      image: portfolio,
+      videoLink: "",
+      liveLink: ""
+    },
+  ];
+
   return (
-    <>
-
-      <div className='project' id = "Project">
-        <div className="container">
-          <h1 className='col-12 mb-1 text-center'>Projects</h1>
-          <hr/>
-          <p className='pb-3 text-center'>
-            Here is my project with live link and source code
-          </p>
-        </div> 
-        <div className="project-name">
-          <div className="project-box">
-
-          <div className='project-details'>
-              <div className="projects-container col-sm-5">
-                <div className="project-outline-box col-sm-5">
-                  <img className="img-top" src='https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg' alt='images' />
-                </div>
-              </div>
-
-              <div className="body col-sm-7">
-                    <div className='align'>
-                    <h5 className="title text">Portfolio-MERN</h5>
-                    <p className="text"> a dark mode-enabled portfolio using the MERN (MongoDB, Express.js, React, Node.js) stack and have included features like email facilities, a responsive navbar, and sections about education and projects.</p>
-                    <a href="https://portfolio-4qlk.onrender.com" className="btn btn-primary mx-1">GoLive</a>
-                    <a href="https://github.com/Pratik9113/portfolio-mern-project.git" className="btn btn-primary mx-3">Github</a>
-                    </div>
-              </div>
-          </div>
-             
-            <div className='project-details'>
-
-              <div className="projects-container col-sm-5">
-                <div className="project-outline-box col-sm-5">
-                  <img className="img-top" src={notifyu} alt='images' />
-                </div>
-              </div>
-
-              <div className="body col-sm-7">
-                    <div className='align'>
-                    <h5 className="title text">NotifyU - Java GUI</h5>
-                    <p className="text">NotifyU, a Java GUI-based system with distinct interfaces for administrators and students, incorporates bulk SMS functionality via an API for event notifications, streamlining student registration and communication for collegiate events</p>
-                    <a href="/#" className="btn btn-primary mx-1">Go somewhere</a>
-                    <a href="https://github.com/Pratik9113/notifyumain.git" className="btn btn-primary mx-3">Github</a>
-                    </div>
-              </div>
+    <div className='projects-container'>
+      {projectList.map((project, index) => (
+        <div key={index} className="card">
+          <img src={project.image} className="card-img-top" alt="project logo" />
+          <div className="card-body">
+            <h5 className="card-title">{project.title}</h5>
+            <p className="card-text">{project.description}</p>
+            <div className="project-links">
+              <a href={project.liveLink} className="btn btn-primary">Live</a>
+              <a href={project.videoLink} className="btn btn-danger">Video</a>
             </div>
-            
-
-            <div className='project-details'>
-              <div className="projects-container col-sm-5">
-                <div className="project-outline-box col-sm-5">
-                  <img className="img-top" src={amazon} alt='images' />
-                </div>
-              </div>
-
-              <div className="body col-sm-7">
-                    <div className='align'>
-                    <h5 className="title text">Amazon clone - HTML,CSS</h5>
-                    <p className="text">Amazon clone using HTML and CSS, showcasing proficiency in front-end development. Successfully replicated key features, including a responsive layout, navigation menu, and product display.</p>
-                    <a href="/#" className="btn btn-primary mx-1">Go somewhere</a>
-                    <a href="https://github.com/Pratik9113/amazon-clone-frontend.git" className="btn btn-primary mx-3">Github</a>
-                    </div>
-                </div>
-            </div>
-            
           </div>
         </div>
-      </div>
-      <div className='content-space'></div>
-    </>
+      ))}
+    </div>
   );
 }
 

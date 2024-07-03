@@ -1,18 +1,23 @@
-import {useState,createContext, useContext} from 'react'
+import React, { useState, createContext, useContext } from 'react';
 
-const ThemeContent = createContext()
+const ThemeContext = createContext();
 
-const ThemeProvider = ({children}) => {
-    const[theme,setTheme] = useState('light')
-
-    return(
-        <ThemeContent.Provider value = {[theme,setTheme]}>
+const ThemeProvider = ({ children }) => {
+    const [theme, setTheme] = useState('light');
+    return (
+        <ThemeContext.Provider value={[theme, setTheme]}>
             {children}
-        </ThemeContent.Provider>
-    )
-}
-
+        </ThemeContext.Provider>
+    );
+};
 
 // custom hook
-const useTheme = () => useContext(ThemeContent);
-export{useTheme, ThemeProvider}
+const useTheme = () => {
+    const context = useContext(ThemeContext);
+    if (!context) {
+        throw new Error('useTheme must be used within a ThemeProvider');
+    }
+    return context;
+};
+
+export { useTheme, ThemeProvider };

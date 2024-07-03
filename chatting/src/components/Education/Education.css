@@ -1,7 +1,6 @@
 .education{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  
+  height: 100vh;
 }
 .education hr{
     color:rgb(40, 40, 233);
@@ -19,8 +18,6 @@
 #dark .education{
     background-color:black;
 }
-/* Existing styles */
-
 #dark .vertical-timeline-element--work {
     background-color: black;
     color: white;
@@ -42,8 +39,7 @@
   #dark .vertical-timeline-element--education p {
     color: white;
   }
-  
-  /* Add the following styles for inside content */
+
   #dark .vertical-timeline-element--work .vertical-timeline-element-content,
   #dark .vertical-timeline-element--education .vertical-timeline-element-content {
     background-color: black;
