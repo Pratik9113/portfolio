@@ -10,47 +10,49 @@ const Projects = () => {
       title: 'Speechify',
       description: 'Implemented high-accuracy speech-to-text, multi-language text translation, audio-to-text, and text-to-speech capabilities',
       image: speechify,
-      videoLink: "",
-      liveLink: ""
+      videoLink: "https://github.com/Pratik9113/Future-ready-talent-Project-speechify.git",
+      liveLink: "https://ashy-pond-07114da10.5.azurestaticapps.net/"
     },
     {
       title: 'Task Management',
       description: 'task management system with comprehensive CRUD features, empowering users to streamline worklow processes with email facilities',
       image: taskManagement,
-      videoLink: "",
-      liveLink: ""
+      videoLink: "https://github.com/Pratik9113/Task-Management-Web-Application-with-Email-Reminders.git",
+      liveLink: "https://task-management-web-application-with-email-reminders-lm64.vercel.app/"
     },
     {
       title: 'Face recognition',
       description: 'automatic attendance tracking through facial recognition, ensuring face detection accuracy achieving an impressive accuracy range of 89% to 95%.',
       image: faceRecognition,
-      videoLink: "",
-      liveLink: ""
+      videoLink: "https://github.com/Pratik9113/Pythonic-pioneers.git",
+      liveLink: "https://github.com/Pratik9113/Pythonic-pioneers.git"
     },
     {
       title: 'PortFolio',
       description: 'Implemented an intuitive and visually appealing user interface to enhance user experience and engagement',
       image: portfolio,
-      videoLink: "",
-      liveLink: ""
+      videoLink: "https://github.com/Pratik9113/portfolio.git",
+      liveLink: "https://portfolio-pratik-chi.vercel.app/"
     },
   ];
 
   return (
+    <div className="div">
     <div className='projects-container'>
       {projectList.map((project, index) => (
-        <div key={index} className="card">
-          <img src={project.image} className="card-img-top" alt="project logo" />
-          <div className="card-body">
-            <h5 className="card-title">{project.title}</h5>
-            <p className="card-text">{project.description}</p>
+        <div key={index} className="cards">
+          <img src={project.image} className="cards-img-top" alt="project logo" />
+          <div className="cards-body">
+            <h5 className="cards-title">{project.title}</h5>
+            <p className="cards-text">{project.description}</p>
             <div className="project-links">
               <a href={project.liveLink} className="btn btn-primary">Live</a>
-              <a href={project.videoLink} className="btn btn-danger">Video</a>
+              <a href={project.videoLink} className="btn btn-danger">GitHub</a>
             </div>
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 }
