@@ -8,6 +8,9 @@ import js  from "./js.png"
 import css from "./css.png"
 import sql from "./sql.png"
 import mongodb from "./mongodb.png"
+import bail from "./bail.png"
+import vaccine from "./vaccine.png"
+
 const assets = () => {
     cpp,
     java,
@@ -18,7 +21,9 @@ const assets = () => {
     css,
     js,
     sql,
-    mongodb
+    mongodb,
+    vaccine,
+    bail
 }
 
 export default assets;

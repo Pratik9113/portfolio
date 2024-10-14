@@ -4,8 +4,29 @@ import speechify from "../../assets/speechify.png";
 import taskManagement from "../../assets/taskManagement.png"
 import faceRecognition from "../../assets/faceRecognition.png"
 import portfolio from "../../assets/Portfolio.png"
+import bail from "../../assets/bail.png"
+import vaccine from "../../assets/vaccine.png"
 const Projects = () => {
   const projectList = [
+    {
+      title: 'Bail Bridges ',
+      description: `Created a system to automate the bail process, enhancing efficiency, reducing manual tasks, and ensuring secure access to
+user data. My Contribution is to develop facial recognition with spoofing detection and tracking; created a police dashboard
+for real-time user monitoring and management of users`,
+      image: bail,
+      videoLink: "https://github.com/Pratik9113/SIH2024.git",
+      liveLink: "https://github.com/Pratik9113/SIH2024.git"
+    },
+    {
+      title: 'Vaccination Center',
+      description: `Developed backend for a vaccination center management system, implementing JWT authentication for secure access,
+automated vaccine notifications for parents
+ Rate limiting to prevent server overload, while handling all CRUD operations for managing appointments and vaccination
+data`,
+      image: vaccine,
+       videoLink: "https://github.com/Pratik9113/vaccination_track.git",
+      liveLink: "https://github.com/Pratik9113/vaccination_track.git"
+    },
     {
       title: 'Speechify',
       description: 'Implemented high-accuracy speech-to-text, multi-language text translation, audio-to-text, and text-to-speech capabilities',
